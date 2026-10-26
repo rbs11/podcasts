@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anthropic's S-1: The Key Takeaways (podcast, 21 min)</title>
+<meta name="description" content="A 21-minute two-host audio briefing on Anthropic's S-1 IPO filing and the reaction on X.">
+<meta property="og:title" content="Anthropic's S-1: The Key Takeaways">
+<meta property="og:type" content="music.song">
+<meta property="og:audio" content="https://rbs11.github.io/podcasts/anthropic-s1/anthropic-s1-podcast-2026-10-26.mp3">
+<meta name="theme-color" content="#1f1b16">
+<style>
+:root{color-scheme:dark}
+body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#1f1b16;color:#f3ede4}
+main{max-width:640px;margin:0 auto;padding:28px 18px 60px}
+.kicker{color:#d9a066;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:28px;line-height:1.2;margin:6px 0 4px}
+.meta{color:#b7ab9b;font-size:14px;margin-bottom:20px}
+audio{width:100%;margin:8px 0 14px}
+.btn{display:block;text-align:center;background:#d9a066;color:#1f1b16;font-weight:700;padding:14px;border-radius:12px;text-decoration:none;margin:10px 0}
+.btn.alt{background:transparent;color:#d9a066;border:1.5px solid #d9a066}
+h2{font-size:18px;margin:28px 0 8px}
+ul{padding-left:20px} li{margin:6px 0}
+.note{color:#b7ab9b;font-size:13px;margin-top:30px}
+</style>
+</head>
+<body>
+<main>
+<p style="margin:0 0 14px"><a href="../" style="color:#d9a066">← All episodes</a></p>
+<div class="kicker">Audio briefing · Oct 26, 2026</div>
+<h1>Anthropic's S-1: The Key Takeaways</h1>
+<div class="meta">Two hosts · 21 min · MP3 128 kbps</div>
+
+<audio id="ep" controls preload="metadata" src="anthropic-s1-podcast-2026-10-26.mp3"></audio>
+<a class="btn" href="anthropic-s1-podcast-2026-10-26.mp3">▶ Open the MP3 directly</a>
+<a class="btn alt" href="anthropic-s1-podcast-2026-10-26.mp3" download="anthropic-s1-podcast-2026-10-26.mp3">⬇ Download for offline listening</a>
+
+<h2>What's covered</h2>
+<ul>
+<li><b>The numbers.</b> H1 2026 revenue was $16.3B, up from $1.2B. The $80.7B net loss is mostly a $72.4B non-cash fair-value charge on convertible notes. Q2 had $974M of GAAP operating income, and compute fell to 48% of revenue.</li>
+<li><b>The bills and the bosses.</b> The filing names roughly $637B in compute deals across Broadcom, SpaceXAI, Google, Amazon, Microsoft, Nscale and Lambda (the total is X/analyst arithmetic). The founders hold 50.1% of the vote through a single Class F share, and the Long-Term Benefit Trust elects a majority of the board.</li>
+<li><b>The debate.</b> The episode covers bull and bear takes on X, the reported $1.5–2T valuation, the lawsuit over the government's supply-chain-risk designation, the staggered lock-up, and what to watch before pricing.</li>
+</ul>
+<p class="note">Figures come from Anthropic's preliminary S-1 filed Oct 26, 2026. Valuation, raise size and timing are press or market reporting, not the filing. Voices are AI-generated. This is not investment advice.</p>
+</main>
+<script>
+if ('mediaSession' in navigator) {
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: "Anthropic's S-1: The Key Takeaways",
+    artist: "Shetty Briefings",
+    album: "AI & Markets"
+  });
+  const a = document.getElementById('ep');
+  const set = (h, f) => { try { navigator.mediaSession.setActionHandler(h, f); } catch (e) {} };
+  set('play', () => a.play());
+  set('pause', () => a.pause());
+  set('seekbackward', d => { a.currentTime = Math.max(0, a.currentTime - (d.seekOffset || 15)); });
+  set('seekforward', d => { a.currentTime = Math.min(a.duration || 1e9, a.currentTime + (d.seekOffset || 30)); });
+  set('seekto', d => { a.currentTime = d.seekTime; });
+}
+</script>
+</body>
+</html>

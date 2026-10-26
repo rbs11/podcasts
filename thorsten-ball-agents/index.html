@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Thorsten Ball Works with Agents: A Podcast</title>
+<meta name="description" content="A two-host podcast on Thorsten Ball's article How I work with Agents (Oct 2026) and the reactions to it on X.">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 18px 48px; line-height: 1.5; }
+  h1 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 6px; }
+  .meta { opacity: .7; font-size: .9rem; margin-bottom: 18px; }
+  audio { width: 100%; margin: 14px 0 10px; }
+  .btn { display: inline-block; padding: 10px 14px; border: 1px solid currentColor; border-radius: 10px; text-decoration: none; color: inherit; margin: 4px 8px 4px 0; font-size: .95rem; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  .note { font-size: .85rem; opacity: .7; margin-top: 24px; }
+</style>
+</head>
+<body>
+<p><a href="../">← All episodes</a></p>
+<h1>How Thorsten Ball Works with Agents</h1>
+<div class="meta">Podcast · 22 min · two hosts · Oct 26, 2026</div>
+
+<audio id="ep" controls preload="metadata" src="thorsten-ball-how-i-work-with-agents-podcast.mp3"></audio>
+<div>
+  <a class="btn" href="thorsten-ball-how-i-work-with-agents-podcast.mp3">Direct MP3 link</a>
+  <a class="btn" href="thorsten-ball-how-i-work-with-agents-podcast.mp3" download="thorsten-ball-how-i-work-with-agents-podcast.mp3">Download MP3</a>
+  <a class="btn" href="https://x.com/thorstenball/status/2114386050638336082">Original post on X</a>
+</div>
+
+<h2>What it covers</h2>
+<p>On Oct 25, 2026, Thorsten Ball (who works on the Amp coding agent) published the X article "How I work with Agents… as of October 2026," a list of 15 rules he'd been sending friends in DMs. It got more than 11,000 bookmarks. This episode goes through every rule, the replies where he explained them, and the pushback.</p>
+<ul>
+  <li>Use the best model, prompt the "what" and not the "how," and make the whole software lifecycle visible to the agent.</li>
+  <li>Ask agents for proof, write down what doesn't count as evidence, test your AGENTS.md with control vs. treatment, and let agents build their own tools for iterating.</li>
+  <li>The debate on X: cost and compaction (@codydotjs, @Drk8_), keeping read and write access to production separate (@subnetmask), and reviewing only code with a high blast radius (@elissasa, @lilianakastilio).</li>
+</ul>
+<p class="note">Voices are AI-generated (neural TTS). Quotes come from the article and from public posts on X, attributed by handle.</p>
+
+<script>
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: 'How Thorsten Ball Works with Agents',
+      artist: 'Podcast for shetty',
+      album: 'Deep Dives · Oct 2026'
+    });
+    const a = document.getElementById('ep');
+    const set = (k, f) => { try { navigator.mediaSession.setActionHandler(k, f); } catch (e) {} };
+    set('play', () => a.play());
+    set('pause', () => a.pause());
+    set('seekbackward', d => { a.currentTime = Math.max(0, a.currentTime - ((d && d.seekOffset) || 15)); });
+    set('seekforward', d => { a.currentTime = Math.min(a.duration || 1e9, a.currentTime + ((d && d.seekOffset) || 30)); });
+    set('seekto', d => { if (d && d.seekTime != null) a.currentTime = d.seekTime; });
+  }
+</script>
+</body>
+</html>
